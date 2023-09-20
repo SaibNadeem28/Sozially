@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 399.73 598.66">
+  <g id="logo_v2" data-name="logo v2">
+    <polygon points="199.86 61.07 199.86 120.63 133.74 150.41 133.74 209.98 67.62 239.76 67.62 120.63 133.74 90.85 199.86 61.07" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="332.11 358.9 332.11 478.03 265.98 448.25 265.98 388.67 199.87 358.9 133.74 329.11 67.62 299.33 67.62 299.32 1.51 269.55 1.51 90.85 67.62 120.63 67.62 239.76 199.87 299.32 265.98 329.11 332.11 358.9" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="398.23 90.85 332.11 120.63 265.98 90.85 199.86 61.07 133.74 90.85 67.62 120.63 67.62 120.63 1.5 90.85 67.62 61.07 67.62 61.06 133.74 31.28 199.86 1.5 265.98 31.28 332.11 61.06 332.11 61.07 398.23 90.85" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="332.1 120.63 332.1 180.2 265.99 150.41 265.98 150.41 199.86 120.63 199.86 61.07 265.98 90.85 332.1 120.63" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="398.22 90.85 398.22 150.41 332.1 180.19 332.1 120.63 398.22 90.85" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="398.23 329.11 332.11 358.9 265.98 329.11 199.87 299.32 67.62 239.76 133.74 209.98 199.87 239.76 265.98 269.55 332.11 299.32 398.23 329.11" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="199.87 537.59 199.87 597.16 133.74 567.38 67.62 537.59 1.51 507.81 1.51 448.25 67.62 478.03 133.74 507.81 199.87 537.59" fill="#fff" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="398.23 329.11 398.23 507.81 332.11 537.59 265.98 567.38 199.87 597.16 199.87 537.59 265.98 507.81 332.11 478.03 332.11 358.9 398.23 329.11" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+    <polygon points="332.11 478.03 265.98 507.81 199.87 537.59 133.74 507.81 67.62 478.03 1.51 448.25 67.62 418.46 199.87 478.03 265.98 448.25 332.11 478.03" fill="none" stroke="#fff" stroke-linejoin="round" stroke-width="3"/>
+  </g>
+</svg>
