@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'; 
 import Link from 'next/link';
-
 import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
@@ -13,24 +12,21 @@ const Navbar = () => (
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
   >
-    <div className="absolute w-[50%] inset-0 gradient-01" style={{ zIndex: 0 }}/>
-    <div
-      className={`${styles.innerWidth} mx-auto flex justify-between gap-8 items-center`}
-    >
+    <div className="absolute w-[50%] inset-0 gradient-01" style={{ zIndex: 0 }} />
+    <div className={`${styles.innerWidth} mx-auto flex justify-between gap-8 items-center`} >
       <img
         src="/logow.svg"
         alt="logo"
         className="logo"
       />
-      
-      <Link href="#about">
-      <div className="rectangle-container">
-      <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
-        About Us
-      </h2> 
-      <div className="rectangle"></div>
-      </div>
-      </Link>
+        <Link href="#about">
+          <div className="rectangle-container">
+            <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+              About Us
+            </h2>
+            <div className="rectangle"></div>
+          </div>
+        </Link>
       <Link href="#portfolio">
         <div className="rectangle-container">
       <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
@@ -55,18 +51,6 @@ const Navbar = () => (
       <div className="rectangle"></div>
       </div>
       </Link>
-     {/* <Link href="#feedback">
-      <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
-          <img
-            src="/headset.svg"
-            alt="headset"
-            className="w-[24px] h-[24px] object-contain"
-          />
-          <span className="font-normal text-[16px] text-white">
-            Get in Touch
-          </span>
-        </button>
-        </Link> */}
         <Link href="#feedback">
       <div className="rectangle-container">
         <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
@@ -74,15 +58,7 @@ const Navbar = () => (
         </h2>
         <div className="rectangle"></div>
       </div> 
-      </Link>
-        
-     
-      
-      {/*<img
-        src="/menu.svg"
-        alt="menu"
-        className="w-[30px] h-[50px] object-contain"
-        /> */}
+      </Link>     
     </div>
     <style jsx>{`
   .logo {
