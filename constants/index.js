@@ -2,7 +2,7 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/s1.jpeg',
-    title: "Alpha's Investment",
+    title: "Alpha's Investments",
   },
   {
     id: 'world-2',
@@ -69,19 +69,19 @@ export const insights = [
     imgUrl: '/26690.png',
     title: 'Blog 1',
     subtitle:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elitsed do ',
+        'Coming Soon ',
   },
   {
     imgUrl: '/26690.png',
     title: 'Blog 2',
     subtitle:
-        'Vitae congue eu consequat ac felis donec. Et magnis dis parturient montes nascetur ridiculus mus. Convallis tellus id interdum',
+        'Coming Soon',
   },
   {
     imgUrl: '/26690.png',
     title: 'Blog 3',
     subtitle:
-        'Quam quisque id diam vel quam elementum. Viverra nam libero justo laoreet sit amet cursus sit. Mauris in aliquam sem',
+        'Coming Soon',
   },
 ];
 
