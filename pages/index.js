@@ -22,7 +22,7 @@ const Home = () => (
       <WhatsNew2 />
     </div>
     <div className="relative">
-    <GetStarted3 />
+      <GetStarted3 />
     </div>
     <World />
     <div className="relative">

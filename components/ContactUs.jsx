@@ -20,6 +20,7 @@ const ContactForm = () => {
     console.log('Message:', message);
   };
 
+  const newLocal = 'John Doe';
   return (
     <div className={styles.contactFormContainer}>
       <h2 className={styles.label}>Contact Us</h2>
@@ -31,24 +32,24 @@ const ContactForm = () => {
           className={styles.input}
           type="text"
           id="name"
-          placeholder='John Doe'
+          placeholder={newLocal}
           value={name}
           onChange={(e) => setName(e.target.value)}
           required
         />
         <div className={styles.inlineFields}>
-        <label className={styles.label} htmlFor="email">
-          Email:
+          <label className={styles.label} htmlFor="email">
+            Email:
           </label>
-              <input
-                className={styles.input}
-                type="email"
-                id="email"
-                placeholder='Exmaple@some.com'
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-              />
+          <input
+            className={styles.input}
+            type="email"
+            id="email"
+            placeholder="Exmaple@some.com"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
           <label className={styles.label} htmlFor="phone">
             Phone:
           </label>
@@ -56,7 +57,7 @@ const ContactForm = () => {
             className={styles.input}
             type="tel"
             id="phone"
-            placeholder='123456789'
+            placeholder="123456789"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
@@ -69,7 +70,7 @@ const ContactForm = () => {
           className={styles.input}
           type="text"
           id="subject"
-          placeholder='Subject'
+          placeholder="Subject"
           value={subject}
           onChange={(e) => setSubject(e.target.value)}
           required
@@ -80,11 +81,11 @@ const ContactForm = () => {
         <textarea
           className={styles.input}
           id="message"
-          placeholder='Type your Message'
+          placeholder="Type your Message"
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
-        ></textarea>
+        />
         <button type="button" className="flex items-center h-fit py-4 px-6 bg-[#25618B] rounded-[32px] gap-[12px]">
           <img
             src="/headset.svg"
