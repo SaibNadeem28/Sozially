@@ -31,17 +31,20 @@ const World = () => (
       >
         <img src="/map.png" alt="map" className="w-full h-full object-cover" />
 
-        {/*<div className="absolute bottom-20 right-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="people-01.png" alt="people" className="w-full h-full" />
+        <div className="absolute bottom-60 right-40 w-[50px] h-[50px] p-[6px] rounded-full bg-transparent">
+          <img src="phili.png" alt="phili" className="w-full h-full  object-cover" />
+          <p  className ="sm:pl-5 pl-6 text-white">Manila Philippine</p>
         </div>
 
-        <div className="absolute top-10 left-20 w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="/people-02.png" alt="people" className="w-full h-full" />
+        <div className="absolute top-20 left-[40%] w-[70px] h-[70px] p-[6px] rounded-full bg-transparent">
+          <img src="belg.png" alt="belg" className="w-full h-full object-contain" />
+          <p  className ="sm:pl-5 pl-6 text-white">Leuven Belgium</p>
         </div>
 
-        <div className="absolute top-1/2 left-[45%] w-[70px] h-[70px] p-[6px] rounded-full bg-[#5D6680]">
-          <img src="people-03.png" alt="people" className="w-full h-full" />
-        </div> */}
+        <div className="absolute top-40 left-[60%] w-[70px] h-[70px] p-[6px] rounded-full bg-transparent">
+          <img src="pak.png" alt="pak" className="w-full h-full object-contain" />
+          <p  className ="sm:pl-5 pl-6 text-white">Lahore Pakistan</p>
+        </div> 
       </motion.div>
     </motion.div>
   </section>

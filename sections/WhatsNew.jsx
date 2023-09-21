@@ -20,8 +20,8 @@ const WhatsNew = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.95] flex justify-center flex-col"
       >
-        <TypingText title="| App Development" />
-        <TitleText title={<>Get started with just a few clicks</>} />
+        <TypingText title="| Our Services" />
+        <TitleText title={<>App Development</>} />
         <div className="mt-[31px] flex flex-col max-w-[1000px] gap-[24px]">
           {startingFeatures1.map((feature, index) => (
             <StartSteps

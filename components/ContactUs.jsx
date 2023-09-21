@@ -36,19 +36,19 @@ const ContactForm = () => {
           onChange={(e) => setName(e.target.value)}
           required
         />
+        <div className={styles.inlineFields}>
         <label className={styles.label} htmlFor="email">
           Email:
-        </label>
-        <div className={styles.inlineFields}>
-          <input
-            className={styles.input}
-            type="email"
-            id="email"
-            placeholder='Exmaple@some.com'
-            value={email}
-            onChange={(e) => setEmail(e.target.value)}
-            required
-          />
+          </label>
+              <input
+                className={styles.input}
+                type="email"
+                id="email"
+                placeholder='Exmaple@some.com'
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
           <label className={styles.label} htmlFor="phone">
             Phone:
           </label>
@@ -95,9 +95,6 @@ const ContactForm = () => {
             Submit
           </span>
         </button>
-        {/*<button className={styles.submitButton} type="submit">
-          Submit
-        </button> */}
       </form>
     </div>
   );

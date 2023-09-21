@@ -24,7 +24,7 @@ const Feedback = () => (
         <img
           src="/logow.svg"
           alt="logo"
-          className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
+          className=" object-cover "
         />
           
          {/* <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">

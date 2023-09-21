@@ -30,8 +30,8 @@ const GetStarted = () => (
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="flex-[0.75] flex justify-center flex-col"
       >
-        <TypingText title="| Web Designing and Development" />
-        <TitleText title={<>Get started with just a few clicks</>} />
+        <TypingText title="| Our Services" />
+        <TitleText title={<>Web Designing & Development</>} />
         <div className="mt-[31px] flex flex-col max-w-[2000px] gap-[24px]">
           {startingFeatures.map((feature, index) => (
             <StartSteps
