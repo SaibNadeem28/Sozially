@@ -17,6 +17,16 @@ const WhatsNew = () => (
       className={`${styles.innerWidth} mx-auto flex lg:flex-row flex-col gap-8`}
     >
       <motion.div
+        variants={planetVariants('right')}
+        className={`flex-1 ${styles.flexCenter}`}
+      >
+        <img
+          src="/1app devwebp.svg"
+          alt="get-started"
+          className="w-[100%] h-[100%] object-contain"
+        />
+      </motion.div>
+      <motion.div
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.95] flex justify-center flex-col"
       >
@@ -31,17 +41,6 @@ const WhatsNew = () => (
             />
           ))}
         </div>
-      </motion.div>
-
-      <motion.div
-        variants={planetVariants('right')}
-        className={`flex-1 ${styles.flexCenter}`}
-      >
-        <img
-          src="/1app devwebp.svg"
-          alt="get-started"
-          className="w-[100%] h-[100%] object-contain"
-        />
       </motion.div>
     </motion.div>
   </section>

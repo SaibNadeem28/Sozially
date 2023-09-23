@@ -20,6 +20,16 @@ const WhatsNew = () => (
         variants={fadeIn('right', 'tween', 0.2, 1)}
         className="flex-[0.95] flex justify-center flex-col"
       >
+        <motion.div
+          variants={planetVariants('right')}
+          className={`flex-1 ${styles.flexCenter}`}
+        >
+          <img
+            src="/1social mediawebp.svg"
+            alt="get-started"
+            className="w-[100%] h-[100%] object-contain"
+          />
+        </motion.div>
         <TypingText title="| Our Services" />
         <TitleText title={<>Social Media Management</>} />
         <div className="mt-[31px] flex flex-col max-w-[1000px] gap-[24px]">
@@ -31,17 +41,6 @@ const WhatsNew = () => (
             />
           ))}
         </div>
-      </motion.div>
-
-      <motion.div
-        variants={planetVariants('right')}
-        className={`flex-1 ${styles.flexCenter}`}
-      >
-        <img
-          src="/1social mediawebp.svg"
-          alt="get-started"
-          className="w-[100%] h-[100%] object-contain"
-        />
       </motion.div>
     </motion.div>
   </section>
