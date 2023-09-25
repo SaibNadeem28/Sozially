@@ -6,7 +6,7 @@ import styles from '../styles';
 import { fadeIn, staggerContainer, zoomIn } from '../utils/motion';
 
 const Feedback = () => (
-  <section className={`${styles.paddings}`} id='feedback'>
+  <section className={`${styles.paddings}`} id="feedback">
     <motion.div
       variants={staggerContainer}
       initial="hidden"
@@ -21,13 +21,13 @@ const Feedback = () => (
         <div className="feedback-gradient" />
 
         <div>
-        <img
-          src="/logow.svg"
-          alt="logo"
-          className=" object-cover "
-        />
-          
-         {/* <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
+          <img
+            src="/logow.svg"
+            alt="logo"
+            className=" object-cover "
+          />
+
+          {/* <h4 className="font-bold sm:text-[32px] text-[26px] sm:leading-[40.32px] leading-[36.32px] text-white">
             Lorem ipsum
           </h4>
           <p className="mt-[8px] font-normal sm:text-[18px] text-[12px] sm:leading-[22.68px] leading-[16.68px] text-white">
@@ -35,19 +35,19 @@ const Feedback = () => (
           </p> */}
         </div>
 
-        {/*<p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
+        {/* <p className="mt-[24px] font-normal sm:text-[24px] text-[18px] sm:leading-[45.6px] leading-[39.6px] text-white">
           “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
           do eiusmod tempor incididunt ut labore et dolore magna aliqua.
           Ut enim ad minim veniam, quis nostrud”
-        </p>*/}
+        </p> */}
       </motion.div>
 
       <motion.div
         variants={fadeIn('left', 'tween', 0.2, 1)}
         className="relative flex-1 flex justify-center items-center"
       >
-        <ContactForm/>
-        {/*<img
+        <ContactForm />
+        {/* <img
           src="/blah.png"
           alt="planet-09"
           className="w-full lg:h-[610px] h-auto min-h-[210px] object-cover rounded-[40px]"
@@ -57,7 +57,7 @@ const Feedback = () => (
           variants={zoomIn(0.4, 1)}
           className="lg:block hidden absolute -left-[10%] top-[3%]"
         >
-         {/*<img
+          {/* <img
             src="/stamp.png"
             alt="stamp"
             className="w-[155px] h-[155px] object-contain"

@@ -10,9 +10,6 @@ import World from './World';
 import Insights from './Insights';
 import Feedback from './Feedback';
 
-
-
-
 export {
   Hero,
   About,

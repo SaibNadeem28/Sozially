@@ -1,13 +1,10 @@
 'use client';
 
-import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { TypingText } from '../components';
 
 import styles from '../styles';
 import { fadeIn, staggerContainer } from '../utils/motion';
-
-
 
 const About = () => (
   <section id="about" className={`${styles.paddings} relative z-10`}>
@@ -26,17 +23,17 @@ const About = () => (
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
         We are {' '}
-        <span className="font-extrabold text-white">Global Digital Soultions Firm</span>  with key offices in {' '}
-        <span className="font-extrabold text-white">Leuven, Belgium; Lahore, Pakistan; and Manila, Philippines</span>. 
-        Our diverse team specializes in 
+        <span className="font-extrabold text-white">Global Digital Solutions Firm</span>  with key offices in {' '}
+        <span className="font-extrabold text-white">Leuven, Belgium; Lahore, Pakistan; and Manila, Philippines</span>.
+        Our diverse team specializes in
         <span>branding, web development, social media engagement</span> and {' '}
         <span className="font-extrabold text-white">
-        custom app/software solutions.
+          custom app/software solutions.
         </span>{' '}
         We blend {' '}
         <span className="font-extrabold text-white">global insights</span> {' '}
         and {' '}
-        <span className="font-extrabold text-white">local expertise</span>{' '} 
+        <span className="font-extrabold text-white">local expertise</span>{' '}
         to help your business capture and captivate its target audience.
         Whether you're looking to {' '}
         <span className="font-extrabold text-white">boost revenue, enhance customer loyalty,</span>{' '}
