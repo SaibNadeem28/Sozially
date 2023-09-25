@@ -15,7 +15,7 @@ const Hero = () => (
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col relative`}
     >
-      <div className="flex flex-row justify-center items-center flex-col relative mt-10">
+      <div className="flex flex-row justify-center items-center flex-col relative z-10 text-overlay">
         <motion.h1 variants={textVariant(1.1)} className={`${styles.heroHeading} no-wrap`} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>
           WELCOME TO
         </motion.h1>
@@ -25,6 +25,7 @@ const Hero = () => (
         >
           <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>SOZ</h1>
           <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>IALLY</h1>
+
         </motion.div>
         <motion.div
           variants={textVariant(1.1)}
@@ -41,7 +42,9 @@ const Hero = () => (
             textStyles="text-center text-sm sm:text-md md:text-lg lg:text-xl"
             className="sm:pl-16 pl-6"
           />
+
         </motion.div>
+
       </div>
 
       <motion.div
@@ -52,12 +55,6 @@ const Hero = () => (
           <AnimatedSVG delay={2} />
         </div>
       </motion.div>
-      <style>{`
-        .z-10 {
-          z-index: 9;
-      }
-      `}
-      </style>
     </motion.div>
   </section>
 );

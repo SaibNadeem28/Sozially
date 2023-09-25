@@ -166,10 +166,4 @@
   -webkit-background-clip: text;
   color: transparent;
 }
-.heroHeading {
-  z-index: 2; /* or any value lower than the dropdown menu's z-index */
-}
 
-.mobile-menu {
-  z-index: 10; /* or a higher value if there are other overlapping elements */
-}

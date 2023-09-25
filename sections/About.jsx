@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 import { TypingText } from '../components';
 
 import styles from '../styles';
@@ -42,12 +43,14 @@ const About = () => (
         we're your go-to long-term partners. Our tech team excels in crafting software that streamlines operations and enriches user experience. We're all about delivering impactful results in today's dynamic digital landscape.
       </motion.p>
 
-      <motion.img
-        variants={fadeIn('up', 'tween', 0.3, 1)}
-        src="/arrow-down.svg"
-        alt="arrow down"
-        className="w-[18px] h-[28px] object-contain mt-[28px]"
-      />
+      <Link href="#portfolio"> {/* <-- Add this Link component */}
+        <motion.img
+          variants={fadeIn('up', 'tween', 0.3, 1)}
+          src="/arrow-down.svg"
+          alt="arrow down"
+          className="w-[18px] h-[28px] object-contain mt-[28px] cursor-pointer" // added cursor-pointer for a hand cursor on hover
+        />
+      </Link>
     </motion.div>
   </section>
 );
