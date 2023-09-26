@@ -1,5 +1,6 @@
 'use client';
 
+import React from 'react';
 import { motion } from 'framer-motion';
 import AnimatedSVG from './animation';
 import { TypingText } from '../components';
@@ -25,16 +26,15 @@ const Hero = () => (
         >
           <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>SOZ</h1>
           <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>IALLY</h1>
-          
         </motion.div>
-        <motion.div 
-          variants={textVariant(1.1)} 
-          className="text-center" 
+        <motion.div
+          variants={textVariant(1.1)}
+          className="text-center"
           style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}
         >
-          <TypingText title="Connecting you to the future Socially and Digitally" textStyles="text-center" className ="sm:pl-16 pl-6"/>
+          {/* Make TypingText responsive using media queries */}
+          <TypingText title="Connecting you to the future Socially and Digitally" textStyles="text-center sm:pl-16 pl-6" />
         </motion.div>
-        
       </div>
 
       <motion.div
