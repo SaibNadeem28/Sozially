@@ -1,12 +1,11 @@
-/* ====== FONTS ====== */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;700&display=swap');
 
-/* ====== TAILWIND DIRECTIVES ====== */
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* ====== GLOBAL STYLES ====== */
 * {
   margin: 0;
   padding: 0;
@@ -15,8 +14,7 @@
   scroll-behavior: smooth;
 }
 
-/* ====== GRADIENT STYLES ====== */
-.gradient-generic-01 {
+.gradient-01 {
   background-image: linear-gradient(
     270deg,
     hsl(295deg 76% 51%) 0%,
@@ -39,36 +37,56 @@
   );
 }
 
-.gradient-generic-02 {
+.gradient-02 {
   position: absolute;
   width: 200px;
   height: 438px;
   top: 0px;
   right: 0px;
+
   background: #7aebfb;
   filter: blur(190px);
 }
 
-.gradient-generic-03 {
+.glassmorphism {
+  background: #06324f;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.gradient-03 {
   position: absolute;
   width: 404px;
   height: 800px;
   left: 20%;
   top: 5%;
+
   background: #53afce;
   filter: blur(175px);
   transform: rotate(-114.2deg);
 }
 
-.gradient-generic-04 {
+.gradient-04 {
   position: absolute;
   width: 304px;
   height: 100vh;
   left: 30%;
   top: 10%;
+
   background: #53afce;
   filter: blur(200px);
   transform: rotate(-53.13deg);
+}
+
+
+.gradient-05 {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.04) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 .feedback-gradient {
@@ -77,6 +95,7 @@
   height: 316px;
   left: 0px;
   top: 0px;
+
   background: #53afce;
   filter: blur(175px);
 }
@@ -87,26 +106,44 @@
   height: 100px;
   left: 37%;
   bottom: 0;
+
   background: #53afce;
   filter: blur(150px);
 }
 
-/* ====== GLASSMORPHISM & MISC EFFECTS ====== */
-.glassmorphism {
-  background: #06324f;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+.text-overlay {
+  position: absolute;
+  top: 13%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
 }
 
-/* ====== TEXT STYLES & ANIMATIONS ====== */
-.typewriter-text {
+.no-wrap {
+  white-space: nowrap;
+}
+
+.moved-image {
+  margin-top: 50px;  /* Adjust as needed */
+}
+
+@keyframes flashing {
+  0%, 100% { fill-opacity: 1; }
+  50% { fill-opacity: 0; }
+}
+
+.flash-animation {
+  animation: flashing 2s infinite;
+  animation-delay: 1s; /* default */
+}
+
+
+.typewriterText {
   color: white;
   font-size: 24px;
 }
 
-.bold-text {
+.boldText {
   font-weight: bold;
   font-size: 28px;
 }
@@ -120,40 +157,13 @@
   color: #ff9900;
 }
 
-.animated-text {
+.animatedText {
   transition: background-image 0.3s ease-in-out;
 }
 
-.animated-text:hover {
+.animatedText:hover {
   background-image: linear-gradient(to right, #FF0000, #00FF00);
   -webkit-background-clip: text;
   color: transparent;
 }
 
-/* ====== ANIMATIONS ====== */
-@keyframes flashing {
-  0%, 100% { fill-opacity: 1; }
-  50% { fill-opacity: 0; }
-}
-
-.flash-animation {
-  animation: flashing 2s infinite;
-  animation-delay: 1s; /* default */
-}
-
-/* ====== UTILITY & MISC STYLES ====== */
-.no-wrap {
-  white-space: nowrap;
-}
-
-.moved-image {
-  margin-top: 50px;  /* Adjust as needed */
-}
-
-.text-overlay {
-  position: absolute;
-  top: 13%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-}

@@ -1,103 +1,71 @@
 /* ContactForm.module.css */
 
 /* Style the ContactForm container */
-.contact-form-container {
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-  }
-  .head{
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-    margin-right: 10px;
-    color: #fff;
-    font-family: 'Realway', sans-serif;
-    font-size: 50.4px;
-  }
-  
-  /* Style labels */
-  .label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 10px;
-    color: #fff;
-    font-family: 'Raleway', sans-serif;
-    font-size: 30.4px;
-  }
-  
-  /* Style input fields */
-  .input {
-    width: 100%;
-    padding: 10px 0; /* Adjust the top and bottom padding */
-    margin-bottom: 16px;
-    border: none; /* Remove the border */
-    border-bottom: 1px solid #ccc; /* Add a bottom border */
-    background-color: transparent; /* Make input fields transparent */
-    outline: none; /* Remove the input field outline */
-    color: #fff;
-  }
-  
-  /* Style the input placeholder */
-  .input::placeholder {
-    color: #ccc; /* Set the color of the placeholder text */
-  }
-  
-  /* Style the submit button */
+.contactFormContainer {
+  background-color: transparent   ;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  overflow: auto;
+}
 
-  /* ContactForm.module.css */
+/* Style the header */
+.head {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  color: #fff;
+  font-family: 'Realway', sans-serif;
+  font-size: 50.4px;
+}
+
+/* Style labels */
+.label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 10px;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 30.4px;
+}
+
+/* Style input fields */
+.input {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  outline: none;
+  color: #fff;
+}
+
+/* Style the input placeholder */
+.input::placeholder {
+  color: #ccc;
+}
+
+/* Style the textarea input field */
+textarea.input {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background-color: transparent;
+  outline: none;
+}
+
+/* Ensure proper spacing between the inline fields */
+.label[for="phone"] {
   
-  /* ... (Other CSS rules) */
-  
-  /* Style the textarea input field */
-  textarea.input {
-    width: 100%;
-    padding: 10px 0;
-    margin-bottom: 16px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background-color: transparent;
-    outline: none;
-    
-  }
-  /* ContactForm.module.css */
-  
-  /* ... (Other CSS rules) */
-  
-  /* Style the inline fields (email and phone) */
-  .inlineFields {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-    margin-top: 20px;
-    margin-bottom: 10px;
-  }
-  
-  /* Style the email and phone number input fields *
-  .input[type="email"],
-  .input[type="tel"] {
-    width: calc(50% - 8px); /* Divide the width by 2 and account for spacing *
-    padding: 10px 10px;
-    margin-bottom: 16px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    background-color: transparent;
-    outline: none;
-  }*/
-  
-  /* Ensure proper spacing between the inline fields */
-  /*.label[for="email"],
-  .label[for="phone"] {
-    margin-bottom: 0; /* Remove margin-bottom for labels in inline fields *
-  }*/
-  
-  .label[for="phone"]{
-    margin-left: 10px;
-    margin-bottom: 50px;
-    margin-right: 10px;
-  }
-  .label[for="email"]{
-    margin-bottom: 50px;
-    margin-right: 10px;
-  }
-  
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.label[for="email"] {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}

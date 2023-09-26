@@ -24,17 +24,19 @@ const Hero = () => (
           variants={textVariant(1.2)}
           className="flex flex-row justify-center items-center "
         >
-          <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>SOZ</h1>
-          <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>IALLY</h1>
+          <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>SOZIALLY</h1>
         </motion.div>
         <motion.div
           variants={textVariant(1.1)}
-          className="text-center"
+          className="flex items-center justify-center text-center w-full mt-4 px-4 sm:px-0"
           style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}
         >
-          {/* Make TypingText responsive using media queries */}
-          <TypingText title="Connecting you to the future Socially and Digitally" textStyles="text-center sm:pl-16 pl-6" />
+          <TypingText
+            title="Connecting you to the future Socially and Digitally"
+            textStyles="text-xs sm:text-sm md:text-md lg:text-lg xl:text-xl break-words w-full"
+          />
         </motion.div>
+
       </div>
 
       <motion.div
