@@ -27,23 +27,24 @@ const World = () => (
 
       <motion.div
         variants={fadeIn('up', 'tween', 0.3, 1)}
-        className="relative mt-10 sm:mt-16 lg:mt-[68px] flex w-full h-auto md:h-[550px]"
+        className="relative mt-[68px] flex flex-wrap w-full" // Allow content to wrap on smaller screens
+        style={{ maxWidth: '100%' }}
       >
         <img src="/map.png" alt="map" className="w-full h-full object-cover" />
 
-        {/* <div className="absolute bottom-60 right-40 w-[50px] h-[50px] p-[6px] rounded-full bg-transparent">
-          <img src="phili.png" alt="phili" className="w-full h-full  object-cover" />
-          <p className="sm:pl-5 pl-6 text-white">Manila Philippine</p>
+        {/* <div className="absolute bottom-12 sm:bottom-60 right-12 sm:right-40">
+          <img src="phili.png" alt="phili" className="w-[40px] sm:w-[50px] h-[40px] sm:h-[50px] object-cover" />
+          <p className="sm:pl-5 pl-6 text-white text-sm sm:text-base">Manila Philippine</p>
         </div>
 
-        <div className="absolute top-20 left-[40%] w-[70px] h-[70px] p-[6px] rounded-full bg-transparent">
+        <div className="absolute top-20 left-[40%] sm:left-[40%] w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] object-cover p-[6px] rounded-full bg-transparent">
           <img src="belg.png" alt="belg" className="w-full h-full object-contain" />
-          <p className="sm:pl-5 pl-6 text-white">Leuven Belgium</p>
+          <p className="sm:pl-5 pl-6 text-white text-sm sm:text-base">Leuven Belgium</p>
         </div>
 
-        <div className="absolute top-40 left-[60%] w-[70px] h-[70px] p-[6px] rounded-full bg-transparent">
+        <div className="absolute top-40 left-[60%] sm:left-[60%] w-[50px] sm:w-[70px] h-[50px] sm:h-[70px] object-cover p-[6px] rounded-full bg-transparent">
           <img src="pak.png" alt="pak" className="w-full h-full object-contain" />
-          <p className="sm:pl-5 pl-6 text-white">Lahore Pakistan</p>
+          <p className="sm:pl-5 pl-6 text-white text-sm sm:text-base">Lahore Pakistan</p>
         </div> */}
       </motion.div>
     </motion.div>

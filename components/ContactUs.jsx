@@ -20,6 +20,7 @@ const ContactForm = () => {
     console.log('Message:', message);
   };
 
+  const newLocal = 'John Doe';
   return (
     <div className={styles.contactFormContainer}>
       <h2 className={styles.label}>Contact Us</h2>
@@ -31,7 +32,7 @@ const ContactForm = () => {
           className={styles.input}
           type="text"
           id="name"
-          placeholder="John Doe"
+          placeholder='John Doe'
           value={name}
           onChange={(e) => setName(e.target.value)}
           required

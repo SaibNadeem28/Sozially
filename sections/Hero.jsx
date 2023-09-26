@@ -25,26 +25,16 @@ const Hero = () => (
         >
           <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>SOZ</h1>
           <h1 className={styles.heroHeading} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>IALLY</h1>
-
+          
         </motion.div>
-        <motion.div
-          variants={textVariant(1.1)}
-          className="text-center mt-4 md:mt-8"
+        <motion.div 
+          variants={textVariant(1.1)} 
+          className="text-center" 
           style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}
         >
-          <TypingText
-            title="Connecting you to the future"
-            textStyles="text-center text-sm sm:text-md md:text-lg lg:text-xl"
-            className="sm:pl-16 pl-6"
-          />
-          <TypingText
-            title="Socially and Digitally"
-            textStyles="text-center text-sm sm:text-md md:text-lg lg:text-xl"
-            className="sm:pl-16 pl-6"
-          />
-
+          <TypingText title="Connecting you to the future Socially and Digitally" textStyles="text-center" className ="sm:pl-16 pl-6"/>
         </motion.div>
-
+        
       </div>
 
       <motion.div
