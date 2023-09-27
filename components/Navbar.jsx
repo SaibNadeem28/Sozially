@@ -94,24 +94,46 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
-              About Us
-            </h2>
-            <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
-              Portfolio
-            </h2>
-            <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
-              Services
-            </h2>
-            <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
-              Blog
-            </h2>
-            <div className="rectangle-container">
-              <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
-                Get In Touch
-              </h2>
-              <div className="rectangle" />
-            </div>
+            <Link href="#about">
+              <div className="rectangle-container">
+                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+                  About Us
+                </h2>
+                <div className="rectangle" />
+              </div>
+            </Link>
+            <Link href="#portfolio">
+              <div className="rectangle-container">
+                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+                  Portfolio
+                </h2>
+                <div className="rectangle" />
+              </div>
+            </Link>
+            <Link href="#services">
+              <div className="rectangle-container">
+                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+                  Services
+                </h2>
+                <div className="rectangle" />
+              </div>
+            </Link>
+            <Link href="#blog">
+              <div className="rectangle-container">
+                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+                  Blog
+                </h2>
+                <div className="rectangle" />
+              </div>
+            </Link>
+            <Link href="#feedback">
+              <div className="rectangle-container">
+                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+                  Get In Touch
+                </h2>
+                <div className="rectangle" />
+              </div>
+            </Link>
           </>
         )}
       </div>
