@@ -35,7 +35,7 @@ const Navbar = () => {
               <div className="rectangle" />
             </div>
           </Link>
-
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="#portfolio">
             <div className="rectangle-container">
               <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
@@ -44,6 +44,7 @@ const Navbar = () => {
               <div className="rectangle" />
             </div>
           </Link>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="#services">
             <div className="rectangle-container">
               <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
@@ -52,6 +53,7 @@ const Navbar = () => {
               <div className="rectangle" />
             </div>
           </Link>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="#blog">
             <div className="rectangle-container">
               <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
@@ -60,6 +62,7 @@ const Navbar = () => {
               <div className="rectangle" />
             </div>
           </Link>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
           <Link href="#feedback">
             <div className="rectangle-container">
               <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
@@ -68,6 +71,7 @@ const Navbar = () => {
               <div className="rectangle" />
             </div>
           </Link>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         </div>
       </div>
       <style>{`
