@@ -48,7 +48,7 @@ const WhatsNew = () => {
           </motion.div>
         ) : null}
         <motion.div
-          variants={fadeIn(isMobile ? 'bottom' : 'right', 'tween', 0.2, 1)}
+          variants={fadeIn(isMobile ? 'bottom' : 'right', 'tween', 0.1, 0.5)}
           className="flex-[0.75] flex justify-center flex-col"
         >
           <TypingText title="| Our Services" />

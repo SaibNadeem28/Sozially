@@ -16,7 +16,7 @@ const Hero = () => (
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto flex flex-col relative`}
     >
-      <div className="flex flex-row justify-center items-center flex-col relative z-10 text-overlay">
+      <div className="flex flex-row justify-center items-center flex-col relative text-overlay">
         <motion.h1 variants={textVariant(1.1)} className={`${styles.heroHeading} no-wrap`} style={{ textShadow: '5px 5px 10px rgba(0, 0, 0, 0.2)' }}>
           WELCOME TO
         </motion.h1>
@@ -41,7 +41,7 @@ const Hero = () => (
 
       <motion.div
         variants={slideIn('bottom', 'tween', 0.2, 1)}
-        className="relative w-full md:-mt-[20px] -mt-[12px] z-10"
+        className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="w-full sm:h-[1000px] z-0 moved-image">
           <AnimatedSVG delay={2} />
