@@ -1,3 +1,5 @@
+'use client';
+
 import { Footer, Navbar } from '../components';
 import { About, Explore, Feedback, GetStarted, GetStarted2, GetStarted3, Hero, Insights, WhatsNew, WhatsNew2, World } from '../sections';
 
