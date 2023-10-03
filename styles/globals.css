@@ -124,7 +124,7 @@
 }
 
 .moved-image {
-  margin-top: 50px;  /* Adjust as needed */
+  margin-top: 50px;  
 }
 
 @keyframes flashing {
@@ -134,7 +134,7 @@
 
 .flash-animation {
   animation: flashing 2s infinite;
-  animation-delay: 1s; /* default */
+  animation-delay: 1s; 
 }
 
 

@@ -96,7 +96,7 @@ const Navbar = () => {
           <>
             <Link href="#about">
               <div className="rectangle-container">
-                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white">
+                <h2 className="font-extrabold text-[20px] leading-[30.24px] text-white style">
                   About Us
                 </h2>
                 <div className="rectangle" />
@@ -172,9 +172,6 @@ const Navbar = () => {
         .mobile-menu h2 {
           margin-bottom: 10px;  
         }
-        
-        
-        
         .fullscreen {
           position: fixed;
           top: 0;
@@ -189,17 +186,15 @@ const Navbar = () => {
           justify-content: center;
           z-index: 9999;
         }
-
         @media (max-width: 767px) {
           .menu-toggle {
             display: block;
           }
         }
-
         .rectangle-container {
           position: relative;
+          z-index: 11;
         }
-
         .rectangle {
           position: absolute;
           bottom: 50%;
@@ -211,13 +206,11 @@ const Navbar = () => {
           border-radius: 60px;
           box-sizing: border-box;
         }
-
         .rectangle:hover {
           box-shadow: 0 0 20px rgba(83, 175, 206, 1);
         }
       `}
       </style>
-
     </motion.nav>
   );
 };

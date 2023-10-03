@@ -27,7 +27,7 @@ const GetStarted = () => (
         />
       </motion.div>
       <motion.div
-        variants={fadeIn('left', 'tween', 0.2, 1)}
+        variants={fadeIn('left', 'tween', 0.2, 0.5)}
         className="flex-[0.95] flex justify-center flex-col"
       >
         <TypingText title="| Our Services" />
