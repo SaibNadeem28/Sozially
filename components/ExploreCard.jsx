@@ -1,11 +1,9 @@
-'use client';
-
 import { motion } from 'framer-motion';
 
 import styles from '../styles';
 import { fadeIn } from '../utils/motion';
 
-const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
+const ExploreCard = ({ id, imgUrl, title, Link, index, active, handleClick }) => (
   <motion.div
     variants={fadeIn('right', 'spring', index * 0.5, 0.75)}
     className={`relative ${
@@ -13,15 +11,19 @@ const ExploreCard = ({ id, imgUrl, title, index, active, handleClick }) => (
     } flex items-center justify-start min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onClick={() => handleClick(id)}
   >
-    <img
-      src={imgUrl}
-      alt="planet-04"
-      className="absolute w-full h-full object-cover rounded-[26px]"
-    />
+    <a href={Link || '#'} target={Link ? '_blank' : '_self'} rel="noopener noreferrer" className="absolute inset-0">
+      <img
+        src={imgUrl}
+        alt={title}
+        className="w-full h-full object-cover rounded-[26px]"
+      />
+    </a>
     {active !== id ? (
-      <h3 className="font-semibold sm:text-[0px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
-        {title}
-      </h3>
+      <a href={Link || '#'} target={Link ? '_blank' : '_self'} rel="noopener noreferrer">
+        <h3 className="font-semibold sm:text-[0px] text-[18px] text-white absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
+          {title}
+        </h3>
+      </a>
     ) : (
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(3,22,35,1)] rounded-b-[21px]">
         <div

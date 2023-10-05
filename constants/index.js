@@ -3,11 +3,13 @@ export const exploreWorlds = [
     id: 'world-1',
     imgUrl: '/s1.jpeg',
     title: "Alpha's Investments",
+    Link: 'https://alphas-investments.com/',
   },
   {
     id: 'world-2',
     imgUrl: '/s2.jpeg',
     title: 'Alpha Barber Shop',
+    Link: 'http://alphabarbershop.be/',
   },
   {
     id: 'world-3',
@@ -56,14 +58,14 @@ export const insights = [
   {
     imgUrl: '/26690.png',
     title: 'Blog 1',
-    subtitle:
-        'Coming Soon ',
+    subtitle: 'Coming Soon ',
+    link: 'public/Mobile_App_User_Experience.docx',
   },
   {
     imgUrl: '/26690.png',
     title: 'Blog 2',
-    subtitle:
-        'Coming Soon',
+    subtitle: 'Coming Soon',
+    link: 'public/Why_You_Need_a_Custom_Website_for_Your_Business.docx',
   },
   {
     imgUrl: '/26690.png',
