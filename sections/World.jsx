@@ -30,7 +30,7 @@ const World = () => (
         className="relative mt-[68px] flex flex-wrap w-full" // Allow content to wrap on smaller screens
         style={{ maxWidth: '100%' }}
       >
-        <img src="/map_1.svg" alt="map" className="w-full h-full object-cover" />
+        <img src="/map.png" alt="map" className="w-full h-full object-cover" />
 
       </motion.div>
     </motion.div>
