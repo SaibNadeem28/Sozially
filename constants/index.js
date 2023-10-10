@@ -13,8 +13,9 @@ export const exploreWorlds = [
   },
   {
     id: 'world-3',
-    imgUrl: '/26690.png',
+    imgUrl: '/ra-banking.png',
     title: 'RA Banking',
+    Link: 'https://ra-banking.com/',
   },
   {
     id: 'world-4',
