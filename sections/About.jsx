@@ -26,7 +26,7 @@ const About = () => (
         We are {' '}
         <span className="font-extrabold text-white">Global Digital Solutions Firm</span>  with key offices in {' '}
         <span className="font-extrabold text-white">Leuven, Belgium; Lahore, Pakistan; and Manila, Philippines</span>.
-        Our diverse team specializes in
+        Our diverse team specializes in {' '}
         <span>branding, web development, social media engagement</span> and {' '}
         <span className="font-extrabold text-white">
           custom app/software solutions.

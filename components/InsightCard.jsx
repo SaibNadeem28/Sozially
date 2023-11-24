@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion';
-
 import { fadeIn } from '../utils/motion';
 
 const InsightCard = ({ imgUrl, title, subtitle, link, index }) => (
@@ -7,7 +6,8 @@ const InsightCard = ({ imgUrl, title, subtitle, link, index }) => (
     variants={fadeIn('up', 'spring', index * 0.5, 1)}
     className="flex md:flex-row flex-col gap-4"
   >
-    <a href={link} download>
+    {/* This anchor tag is for the image */}
+    <a href={link} target="_blank" rel="noopener noreferrer">
       <img
         src={imgUrl}
         alt="blog"
@@ -24,10 +24,11 @@ const InsightCard = ({ imgUrl, title, subtitle, link, index }) => (
         </p>
       </div>
 
+      {/* This div contains another anchor for the arrow image */}
       <div
         className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
       >
-        <a href={link} download>
+        <a href={link} target="_blank" rel="noopener noreferrer">
           <img
             src="/arrow.svg"
             alt="arrow"
