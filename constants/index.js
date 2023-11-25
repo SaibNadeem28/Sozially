@@ -19,13 +19,15 @@ export const exploreWorlds = [
   },
   {
     id: 'world-4',
-    imgUrl: '/26690.png',
-    title: 'Coming Soon',
+    imgUrl: '/ilumina.jpeg',
+    title: 'Illumina Hair Salon',
+    Link: 'https://illuminahairsalon.com/',
   },
   {
     id: 'world-5',
-    imgUrl: '/26690.png',
-    title: 'Coming Soon',
+    imgUrl: '/cis.jpeg',
+    title: 'Cis3aux',
+    Link: 'https://www.cis3aux.com/',
   },
 ];
 
