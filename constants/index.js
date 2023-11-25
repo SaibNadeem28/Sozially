@@ -19,7 +19,7 @@ export const exploreWorlds = [
   },
   {
     id: 'world-4',
-    imgUrl: '/ilumina.jpeg',
+    imgUrl: '/Ilumina.jpeg',
     title: 'Illumina Hair Salon',
     Link: 'https://illuminahairsalon.com/',
   },
