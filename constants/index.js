@@ -11,12 +11,12 @@ export const exploreWorlds = [
     title: 'Alpha Barber Shop',
     Link: 'http://alphabarbershop.be/',
   },
-  {
-    id: 'world-3',
-    imgUrl: '/ra-banking.png',
-    title: 'RA Banking',
-    Link: 'https://ra-banking.com/',
-  },
+  // {
+  //   id: 'world-3',
+  //   imgUrl: '/ra-banking.png',
+  //   title: 'RA Banking',
+  //   Link: 'https://ra-banking.com/',
+  // },
   {
     id: 'world-4',
     imgUrl: '/Ilumina.jpeg',
