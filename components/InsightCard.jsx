@@ -1,43 +1,41 @@
+// File: components/InsightCard.jsx
 import { motion } from 'framer-motion';
+import { useRouter } from 'next/router';
 import { fadeIn } from '../utils/motion';
 
-const InsightCard = ({ imgUrl, title, subtitle, link, index }) => (
-  <motion.div
-    variants={fadeIn('up', 'spring', index * 0.5, 1)}
-    className="flex md:flex-row flex-col gap-4"
-  >
-    {/* This anchor tag is for the image */}
-    <a href={link} target="_blank" rel="noopener noreferrer">
+const InsightCard = ({ imgUrl, title, subtitle, index, route }) => {
+  const router = useRouter(); // Initialize the router
+
+  const navigate = () => {
+    router.push(route); // Use the route prop to navigate
+  };
+
+  return (
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 1)}
+      className="flex md:flex-row flex-col gap-4 items-center cursor-pointer"
+      onClick={navigate} // Add the onClick event here to the entire card
+    >
+      {/* Image */}
       <img
         src={imgUrl}
-        alt="blog"
+        alt={title}
         className="md:w-[270px] w-full h-[250px] rounded-[32px] object-cover"
       />
-    </a>
-    <div className="w-full flex justify-between items-center">
-      <div className="flex-1 md:ml-[62px] flex flex-col max-w-[650px]">
+
+      {/* Title and Subtitle */}
+      <div className="flex-1">
         <h4 className="font-normal lg:text-[42px] text-[26px] text-white">
           {title}
         </h4>
-        <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
-          {subtitle}
-        </p>
+        {subtitle && (
+          <p className="mt-[16px] font-normal lg:text-[20px] text-[14px] text-secondary-white">
+            {subtitle}
+          </p>
+        )}
       </div>
-
-      {/* This div contains another anchor for the arrow image */}
-      <div
-        className="lg:flex hidden items-center justify-center w-[100px] h-[100px] rounded-full bg-transparent border-[1px] border-white"
-      >
-        <a href={link} target="_blank" rel="noopener noreferrer">
-          <img
-            src="/arrow.svg"
-            alt="arrow"
-            className="w-[150%] h-[100%] object-contain"
-          />
-        </a>
-      </div>
-    </div>
-  </motion.div>
-);
+    </motion.div>
+  );
+};
 
 export default InsightCard;

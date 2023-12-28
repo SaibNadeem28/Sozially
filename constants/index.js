@@ -1,3 +1,4 @@
+
 export const exploreWorlds = [
   {
     id: 'world-1',
@@ -61,12 +62,12 @@ export const insights = [
   {
     imgUrl: '/Mobile.jpg',
     title: 'Mobile App User Experience',
-    link: 'public/public/Mobile_App_User_Experience.docx',
+    route: '/display',
   },
   {
     imgUrl: '/custom.jpg',
     title: 'Why You Need a Custom Website for Your Business',
-    link: 'public/Why_You_Need_a_Custom_Website_for_Your_Business.docx',
+    route: '/display2',
   },
   // {
   //   imgUrl: '/26690.png',
