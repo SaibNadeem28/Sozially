@@ -11,7 +11,7 @@ import { fadeIn, staggerContainer } from '../utils/motion';
 // import { blog } from '../sections';
 
 const Blog1 = () => (
-  <section id="about" className={`${styles.paddings} relative z-10`}>
+  <section id="Blog1" className={`${styles.paddings} relative z-10`}>
     <div className="gradient-02 z-0" />
     {/* <motion.div
       variants={staggerContainer}
@@ -20,6 +20,9 @@ const Blog1 = () => (
       viewport={{ once: false, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     > */}
+    <Link href="#blog">
+      {'<'}--Back
+    </Link>
       <TypingText title="| Mobile App User Experience" textStyles="text-center" />
 
       <motion.p
